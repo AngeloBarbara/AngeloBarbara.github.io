@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angelo Barbara</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <header id="cabecera" class="sombra">
+            <h1>Blog de Cocina Italiana</h1>
+        </header>
+
+        <nav class="sombra">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Recetas</a>
+                </li>
+                <li>
+                    <a href="#">Productos</a>
+                </li>
+                <li>
+                    <a href="#">Enlaces</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="contenidoPrincipal">
+            <main>
+                <form action="contacto.html" method="post">
+                    <h2>Contacto</h2>
+                    <p>
+                        <input class="texto sombra" type="text" name="t1" value="" placeholder="Nombre" required>
+                    </p>
+                    <p>
+                        <input class="texto sombra" type="email" style="margin-bottom:10px;" name="t2" value="" placeholder="E-mail" required>
+                    </p>
+                    <p>
+                        <input class="texto sombra" type="text" name="t3" value="" placeholder="Asunto">
+                    </p>
+                    <p>
+                        <input class="texto sombra" type="tel" name="t3" value="" placeholder="Teléfono">
+                    </p>
+                    <p>
+                        <textarea class="texto sombra" name="t4" cols="50" rows="5" placeholder="Escriba su mensaje..."></textarea>
+                    </p>
+                    <p>
+                        <input type="file">
+                    </p>
+                    <input class="sombra" type="submit">
+                </form>
+            </main>
+
+            <aside>
+                <div id="contenedorAside">
+                    <h3>Sobre mi</h3>
+
+                    <div>
+                        <img src="images/personal.jpg" alt="foto" class="sombra">
+                        <p>Estudiante de 2 de DAW en IES Gran Capitán.</p>
+                    </div>
+
+                    <div id="busqueda">
+                        <canvas id="micanvas" width="50px" height="50px">
+                            No soporta la API html5 de canvas
+                        </canvas>
+                        <input type="text" placeholder="Buscar" class="sombra">
+                    </div>
+                </div>
+
+                <a href="#contenedor" id="botonSubir">
+                    <img src="images/subir.svg" alt="">
+                </a>
+            </aside>
+        </div>
+
+
+        <footer class="sombra">
+            <p id="nombre">· Diseñado por Angelo Barbara ·</p>
+            <p id="practica">Práctica 10 DIWEB</p>
+            <div id="iconos">
+                <a href="#" id="twitter" class="fa fa-twitter-square fa-3x" target="_blank"></a>
+                <a href="#" id="facebook" class="fa fa-facebook-square fa-3x" target="_blank"></a>
+                <a href="#" id="github" class="fa fa-github-square fa-3x" target="_blank"></a>
+                <a href="#" id="gplus" class="fa fa-google-plus-square fa-3x" target="_blank"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

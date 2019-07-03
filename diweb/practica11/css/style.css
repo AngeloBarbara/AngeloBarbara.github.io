@@ -1,0 +1,316 @@
+body{
+    background: url('../images/corcho.jpeg');
+    font-family: 'Open Sans', serif;
+}
+
+@font-face{
+    font-family: "Mystery Quest";
+	src: url("../fonts/MysteryQuest-Regular.ttf");
+}
+
+body>header{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+body>header>h1{
+    color: white;
+    padding: 25px;
+    background: rgba(134, 211, 115, 0.4);
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#panelLateral{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#addTarea>img{
+    width: 40%;
+}
+
+#contenidoPrincipal{
+    display: grid;
+    grid-template-columns: 70% 29%;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article{
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    font-family: 'Mystery Quest', cursive;
+    margin: 30px;
+    padding: 1em;
+    box-shadow: 10px 10px 10px rgba(33,33,33,.7);
+    text-align: center;
+    width: 60%;
+    font-size: 16px;
+    height: 150px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+main section article:nth-child(even){
+    transform: rotate(4deg);
+}
+
+main section article:nth-child(3n){
+    transform: rotate(-3deg);
+}
+
+main section article:nth-child(5n){
+    transform: rotate(5deg);
+}
+
+main section article:hover{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+}
+
+main section article #modificar{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+main section article #eliminar{
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.diweb{
+    background:rgb(201, 170, 209);
+}
+
+.dwes{
+    background:rgb(88, 214, 214);
+}
+
+.dwec{
+    background:rgb(211, 112, 55);
+}
+
+.android{
+    background:rgb(99, 173, 97);
+}
+
+.daw{
+    background:rgb(156, 170, 201);
+}
+
+.empresa{
+    background:rgb(235, 205, 73);
+}
+
+.asignatura{
+    margin: 10px;
+    box-shadow: 0 0 20px black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.asignatura:hover{
+    cursor: pointer;
+}
+
+#btnAndroid{
+    background:rgba(99, 173, 97, 0.4);
+}
+
+#btnDwec{
+    background:rgba(211, 112, 55, 0.4);
+}
+
+#btnDwes{
+    background:rgba(88, 214, 214, 0.4);
+}
+
+#btnDiweb{
+    background:rgba(201, 170, 209, 0.4);
+}
+
+#btnDaw{
+    background:rgba(156, 170, 201, 0.4);
+}
+
+#btnEmpresa{
+    background:rgba(235, 205, 73, 0.4);
+}
+
+#btnMostrarTodo{
+    background: rgba(134, 211, 115, 0.4);
+}
+
+#formOculto{
+    display: none;
+    margin-top: 20px;
+    background-color: rgb(240, 148, 73);
+    box-shadow: 0 0 20px black;
+    min-height: 270px;
+    font-size: 12px;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+form label{
+    margin-top: 10px;
+    color: white;
+}
+
+form input{
+    width: 80%;
+}
+
+form textarea{
+    width: 80%;
+}
+
+div>p{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background: rgba(134, 211, 115, 0.4);
+    box-shadow: 0 0 20px black;
+    margin: 30px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer #iconos{
+    padding: 10px;
+    font-size: 7px;
+    text-align: center;
+}
+
+footer #iconos a {
+    color: #fff;
+    margin: 0px 20px; 
+    text-decoration: none;
+    transition: color 0.7s, transform 0.7s;
+}
+
+footer #iconos #twitter:hover {
+    color: #04a6db;
+    transform: scale(1.3);
+}
+
+footer #iconos #facebook:hover {
+    color: #02309b;
+    transform: scale(1.3);
+}
+
+footer #iconos #github:hover {
+    color: #9f00ff;
+    transform: scale(1.3);
+}
+
+footer #iconos #gplus:hover {
+    color: #DC4A38;
+    transform: scale(1.3);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body>header>h1{
+        font-size: 30px;
+    }
+
+    .asignatura{
+        font-size: 19px;
+    }
+
+    main section article{
+        width: 30%;
+        font-size: 18px;
+        height: 200px;
+    }
+
+    #contenidoPrincipal{
+        *margin-top: 50px;
+        display: grid;
+        grid-template-columns: 80% 19%;
+    }
+
+    #formOculto{
+        min-height: 310px;
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 16px;
+    }
+
+    footer #iconos{
+        text-align: right;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    body>header>h1{
+        font-size: 37px;
+    }
+
+    .asignatura{
+        font-size: 24px;
+    }
+
+    main section article{
+        width: 20%;
+        font-size: 22px;
+        height: 200px;
+    }
+
+    #contenidoPrincipal{
+        *margin-top: 50px;
+        display: grid;
+        grid-template-columns: 85% 14%;
+    }
+
+    #formOculto{
+        min-height: 390px;
+        font-size: 20px;
+    }
+
+    footer{
+        font-size: 20px;
+    }
+
+    footer #iconos{
+        text-align: right;
+        font-size: 15px;
+    }
+}

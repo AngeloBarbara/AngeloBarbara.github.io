@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container_input {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.container_input label {
+    text-align: left;
+}
+
+#formulario {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+}
+
+#formulario h3 {
+    align-self: flex-start;
+}
+
+.errorForm {
+    color: #ff0000;
+    background-color: #ffDEDE;
+    font-weight: bold;
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    top: 0px;
+}

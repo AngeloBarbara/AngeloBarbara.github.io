@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script src="js/mostrarAsignaturas.js"></script>
+    <title>Angelo Barbara</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Gestor de tareas
+        </h1>
+    </header>
+
+    <div id="contenidoPrincipal">
+        <main>
+            <section id="seccion">
+                <article class="diweb">
+                    <a href="#"><img id="modificar" src="images/modificar.png" alt=""></a>
+                    <a href="#"><img id="eliminar" src="images/eliminar.png" alt=""></a>
+                    <header>
+                        <h2>Titulo</h2>
+                        <h5>Fecha de entrega: 12/12/2018</h5>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="dwes">
+                    <a href="#"><img id="modificar" src="images/modificar.png" alt=""></a>
+                    <a href="#"><img id="eliminar" src="images/eliminar.png" alt=""></a>
+                    <header>
+                        <h2>Titulo</h2>
+                        <h5>Fecha de entrega: 12/12/2018</h5>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="dwec">
+                    <a href="#"><img id="modificar" src="images/modificar.png" alt=""></a>
+                    <a href="#"><img id="eliminar" src="images/eliminar.png" alt=""></a>
+                    <header>
+                        <h2>Titulo</h2>
+                        <h5>Fecha de entrega: 12/12/2018</h5>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="dwec">
+                    <a href="#"><img id="modificar" src="images/modificar.png" alt=""></a>
+                    <a href="#"><img id="eliminar" src="images/eliminar.png" alt=""></a>
+                    <header>
+                        <h2>Titulo</h2>
+                        <h5>Fecha de entrega: 12/12/2018</h5>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="diweb">
+                    <a href="#"><img id="modificar" src="images/modificar.png" alt=""></a>
+                    <a href="#"><img id="eliminar" src="images/eliminar.png" alt=""></a>
+                    <header>
+                        <h2>Titulo</h2>
+                        <h5>Fecha de entrega: 12/12/2018</h5>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="android">
+                    <a href="#"><img id="modificar" src="images/modificar.png" alt=""></a>
+                    <a href="#"><img id="eliminar" src="images/eliminar.png" alt=""></a>
+                    <header>
+                        <h2>Titulo</h2>
+                        <h5>Fecha de entrega: 12/12/2018</h5>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="dwes">
+                    <a href="#"><img id="modificar" src="images/modificar.png" alt=""></a>
+                    <a href="#"><img id="eliminar" src="images/eliminar.png" alt=""></a>
+                    <header>
+                        <h2>Titulo</h2>
+                        <h5>Fecha de entrega: 12/12/2018</h5>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="daw">
+                    <a href="#"><img id="modificar" src="images/modificar.png" alt=""></a>
+                    <a href="#"><img id="eliminar" src="images/eliminar.png" alt=""></a>
+                    <header>
+                        <h2>Titulo</h2>
+                        <h5>Fecha de entrega: 12/12/2018</h5>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="empresa">
+                    <a href="#"><img id="modificar" src="images/modificar.png" alt=""></a>
+                    <a href="#"><img id="eliminar" src="images/eliminar.png" alt=""></a>
+                    <header>
+                        <h2>Titulo</h2>
+                        <h5>Fecha de entrega: 12/12/2018</h5>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+
+            </section>
+        </main>
+
+        <div id="panelLateral">
+            <a id ="addTarea" href="#" id="new">
+                <img src="images/anadir.svg">
+            </a>
+            <div id="formOculto">
+                <form action="#" method="">
+                    <label for="titulo">Título:</label>
+                    <input id="titulo" type="text" required>
+                    <label for="fecha">Fecha de entrega:</label>
+                    <input type="date" name="" id="fecha" required>
+                    <label for="asignaturaAdd">Asignatura:</label>
+                    <select name="" id="asignaturaAdd">
+                        <option value="diweb">DIWEB</option>
+                        <option value="dwes">DWES</option>
+                        <option value="dwec">DWEC</option>
+                        <option value="android">HLC</option>
+                        <option value="daw">DAW</option>
+                        <option value="empresa">Empresa</option>
+                    </select>
+                    <label for="tarea">Tarea:</label>
+                    <textarea name="" id="tarea" cols="10" rows="5" required></textarea>
+                    <label for="enviar"></label>
+                    <input type="button" name="" id="enviar" value="Añadir tarea">
+                </form>
+            </div>
+
+            <nav>
+                <div id="btnDiweb" class="asignatura">
+                    <p>DIWEB</p>
+                </div>
+    
+                <div id="btnDwes" class="asignatura">
+                    <p>DIWES</p>
+                </div>
+    
+                <div id="btnDwec" class="asignatura">
+                    <p>DIWEC</p>
+                </div>
+    
+                <div id="btnAndroid" class="asignatura">
+                    <p>HLC</p>
+                </div>
+    
+                <div id="btnDaw" class="asignatura">
+                    <p>DAW</p>
+                </div>
+    
+                <div id="btnEmpresa" class="asignatura">
+                    <p>Empresa</p>
+                </div>
+    
+                <div id="btnMostrarTodo" class="asignatura">
+                    <p>Mostrar Todo</p>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <footer>
+        <p id="nombre">· Diseñado por Angelo Barbara ·</p>
+        <p id="practica">Práctica 11 DIWEB</p>
+        <div id="iconos">
+            <a href="#" id="twitter" class="fa fa-twitter-square fa-3x" target="_blank"></a>
+            <a href="#" id="facebook" class="fa fa-facebook-square fa-3x" target="_blank"></a>
+            <a href="#" id="github" class="fa fa-github-square fa-3x" target="_blank"></a>
+            <a href="#" id="gplus" class="fa fa-google-plus-square fa-3x" target="_blank"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

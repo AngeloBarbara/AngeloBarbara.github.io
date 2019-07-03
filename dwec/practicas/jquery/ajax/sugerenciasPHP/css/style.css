@@ -1,0 +1,42 @@
+#sugerencias{
+    border: .5 solid rgb(148, 145, 145);
+    background-color: rgb(228, 226, 226);
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: flex;
+}
+
+#container label{
+    margin-right: 20px 
+}
+
+#caja{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#sugerencias p:hover{
+    cursor: pointer;
+    background-color: rgb(201, 201, 201);
+}
+
+.button{
+    display: block;
+    width: 130px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(55, 140, 197);
+    text-decoration: none;
+    margin-top: 10px;
+}

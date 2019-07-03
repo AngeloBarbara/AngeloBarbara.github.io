@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/buscaminas.js"></script>
+    <script src="js/jugar_jquery.js"></script>
+    
+    <title>Buscaminas</title>
+</head>
+<body>
+    <div id="contenido">
+        <form action="" method="" id="form">
+            <p>Introduzca el nivel de dificultad del buscaminas</p>
+            <div id="inputs">
+                <input type="button" value="Facil" class="input">
+                <input type="button" value="Intermedio" class="input">
+                <input type="button" value="Dificil" class="input">
+            </div>
+        </form>
+    </div>
+    <div id="nuevoJuego">
+        <span id="pierde"><p>Has perdido</p></span>
+        <span id="gana"><p>Has ganado</p></span>
+        <div id="inputs">
+            <input type="button" value="Reiniciar" id="newGame">
+        </div>
+    </div>
+</body>
+</html>

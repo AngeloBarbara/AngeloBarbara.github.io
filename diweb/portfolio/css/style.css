@@ -1,0 +1,641 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  *overflow: hidden;
+}
+
+header {
+  background-color: rgb(53, 51, 51);
+  height: 5em;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
+#header,
+h1,
+h3,
+#repository {
+  margin: 0;
+  padding: 0;
+  *margin-right: 25px;
+}
+
+#header {
+  margin-left: 25px;
+}
+
+#repository a {
+  margin: 10px;
+}
+
+#repository{
+  display: flex;
+}
+
+#github:hover {
+  color: rgb(85, 85, 231);
+}
+
+#twitter:hover {
+  color: rgb(231, 85, 224);
+}
+
+#linkedin:hover {
+  color: rgb(231, 119, 85);
+}
+
+#p1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/background3.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* @media (min-width:) and (max-width:){
+  #p1{
+		justify-content: space-around;
+	}
+} */
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+#p1 {
+}
+
+#sobremi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 250px;
+  height: 360px;
+  border-radius: 20px;
+  background-color: rgba(118, 120, 141, 0.5);
+  *margin-left: 100px;
+  *border: 1px solid black;
+  margin-top: 60px;
+}
+
+#imagen {
+  width: 40%;
+}
+
+#imagen img {
+  width: 100%;
+}
+
+#descripcion {
+  width: 80%;
+}
+
+#descripcion p {
+  font-size: 13px;
+}
+
+#habilidades {
+  *margin-right: 300px;
+  width: 85%;
+  margin-top: 10px;
+  *margin-top: 50px;
+}
+
+#habilidades h2 {
+  text-align: center;
+  color: rgb(121, 127, 133);
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+#java,
+#php,
+#python,
+#html,
+#css,
+#js {
+  display: flex;
+  margin: 3px;
+  padding: 0;
+  align-content: center;
+  align-items: center;
+}
+
+#grafo-habilidades {
+  display: flex;
+  flex-direction: column;
+}
+
+#grafo-habilidades img {
+  width: 35px;
+  height: 35px;
+}
+
+#grafo-habilidades div div {
+  margin-left: 10px;
+  height: 15px;
+  *margin-top: 30px;
+  background-color: rgb(122, 114, 114);
+}
+
+#grafo-habilidades div div p {
+  margin: 0;
+  padding: 2px;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+#barra-java {
+  *width: 70%;
+}
+
+#barra-php {
+  *width: 60%;
+}
+
+#barra-html {
+  *width: 70%;
+}
+
+#barra-css {
+  *width: 70%;
+}
+
+#barra-js {
+  *width: 60%;
+}
+
+#barra-python {
+  *width: 50%;
+}
+
+#pag2 {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-image: url("../img/background5.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#pag2 h2 {
+  color: rgb(84, 87, 90);
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#buscaminas {
+  background-image: url("../img/buscaminas.jpg");
+  background-size: cover;
+}
+
+#gestor-tareas {
+  background-image: url("../img/tareas.jpg");
+  background-size: cover;
+}
+
+#blog-cocina {
+  background-image: url("../img/cocina.jpg");
+  background-size: cover;
+}
+
+#casas {
+  background-image: url("../img/casas.jpg");
+  background-size: cover;
+}
+
+#proyectos {
+  display: flex;
+  flex-direction: column;
+  *border: 1px solid black;
+  width: 70%;
+  display: none;
+}
+
+#lista-proyectos ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  *border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+#lista-proyectos ul li {
+  width: 45%;
+  height: 100px;
+  margin: 5px;
+  padding: 0;
+}
+
+#lista-proyectos ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.slideShowButtons {
+  width: 600px;
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  margin-left: 10px;
+}
+
+.slideButton {
+  cursor: pointer;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: #a1a1a1;
+  margin-right: 10px;
+}
+
+#pag3 {
+  width: 100%;
+  height: 100%;
+  *position: relative;
+  background-image: url("../img/background7.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#pag3 h2 {
+  margin: 0;
+  padding: 0;
+  color: rgb(69, 70, 71);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  *margin-top: 80px;
+}
+
+a {
+  color: #4a545f;
+  text-decoration: none;
+}
+
+.login {
+  *width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* @media (min-width: ) and (max-width:){
+		#p1{
+			justify-content: space-around;
+		}
+	} */
+
+input[type="text"],
+textarea {
+  width: 285px;
+  padding: 20px 0px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #435160;
+  outline: none;
+  color: rgb(84, 87, 90);
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: block;
+  position: absolute;
+  margin-right: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  content: "";
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 3px solid #435160;
+}
+
+#agree:checked ~ label[for="agree"] {
+  background: #435160;
+}
+
+input[type="submit"] {
+  background: #1fce6d;
+  border: 0;
+  width: 285px;
+  height: 40px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background: #16aa56;
+  animation-name: shake;
+}
+
+.agree {
+  padding: 30px 0px;
+  font-size: 12px;
+  text-indent: 25px;
+  line-height: 15px;
+  color: rgb(84, 87, 90);
+}
+
+::-webkit-input-placeholder {
+  color: rgb(84, 87, 90);
+  font-size: 12px;
+}
+
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #p1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #sobremi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 45%;
+    margin-left: 20px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(118, 120, 141, 0.5);
+    *margin-left: 100px;
+    *border: 1px solid black;
+  }
+
+  #imagen {
+    width: 50%;
+  }
+
+  #imagen img {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  #descripcion {
+    width: 70%;
+    margin-left: 10px;
+  }
+
+  #descripcion p {
+    font-size: 15px;
+  }
+
+  #habilidades {
+    *margin-right: 300px;
+    width: 50%;
+    margin-top: 80px;
+  }
+
+  #habilidades h2 {
+    text-align: center;
+    color: rgb(84, 87, 90);
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #grafo-habilidades {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #grafo-habilidades img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #grafo-habilidades div div {
+    margin-left: 15px;
+    height: 20px;
+    *margin-top: 30px;
+    background-color: rgb(122, 114, 114);
+  }
+
+  #grafo-habilidades div div p {
+    margin: 0;
+    padding: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  #java,
+  #php,
+  #python,
+  #html,
+  #css,
+  #js {
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    align-content: center;
+    align-items: center;
+  }
+
+  #lista-proyectos ul li {
+    *width: 45%;
+    height: 130px;
+    *margin: 5px;
+    *padding: 0;
+  }
+
+  #pag2 h2 {
+    font-size: 2.5em;
+  }
+
+  #pag3 h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  header{
+    height: 75px;
+  }
+
+  #p1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    *border: 1px solid black;
+  }
+
+  #sobremi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 400px;
+    height: 600px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: rgba(118, 120, 141, 0.5);
+    *margin-left: 100px;
+  }
+
+  #imagen {
+    width: 50%;
+  }
+
+  #imagen img {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  #descripcion {
+    width: 70%;
+    margin-left: 10px;
+  }
+
+  #descripcion p {
+    font-size: 20px;
+  }
+
+  #habilidades {
+    *margin-right: 300px;
+    width: 40%;
+    margin-top: 80px;
+  }
+
+  #habilidades h2 {
+    text-align: center;
+    color: rgb(84, 87, 90);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #grafo-habilidades {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #grafo-habilidades img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #grafo-habilidades div div {
+    margin-left: 20px;
+    height: 30px;
+    *margin-top: 30px;
+    background-color: rgb(122, 114, 114);
+  }
+
+  #grafo-habilidades div div p {
+    margin: 0;
+    padding: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  #java,
+  #php,
+  #python,
+  #html,
+  #css,
+  #js {
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    align-content: center;
+    align-items: center;
+  }
+
+  #p1 h2 {
+    font-size: 3.6em;
+  }
+
+  #pag2 h2 {
+    font-size: 3.6em;
+  }
+
+  #lista-proyectos ul li {
+    width: 44%;
+    height: 200px;
+    margin: 20px;
+  }
+
+  #pag3 h2 {
+    font-size: 3.6em;
+  }
+}

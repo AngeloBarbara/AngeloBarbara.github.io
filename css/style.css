@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+}
+
+body header {
+  background-color: rgba(47, 75, 104, 0.747);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body header h1 {
+  margin: 0px;
+  padding: 15px 20px;
+  font-size: 1.5em;
+  color: #ffff;
+}
+
+body main {
+  padding: 4px 1px;
+}
+
+body main #containerProyectos {
+  padding: 10px 15px;
+  display: grid;
+  grid-gap: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  body main #containerProyectos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+body main #containerProyectos .containerTile {
+  text-decoration: none;
+}
+
+body main #containerProyectos .containerTile .tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  color: #fff;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  body main #containerProyectos .containerTile .tile {
+    min-height: 200px;
+  }
+}
+
+.blue {
+  background-color: rgb(79, 95, 138);
+}
+

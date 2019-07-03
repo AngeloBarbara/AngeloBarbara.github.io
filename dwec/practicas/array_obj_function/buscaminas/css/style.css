@@ -1,0 +1,122 @@
+.button{
+    *border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    *background-color: red;
+    *background-image: url("../img/img.png");
+    background-position:center;
+    background-size: cover;
+    background-color: rgb(190, 68, 68);
+    color: transparent;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+body{
+    *background-image: url("../img/img.png");
+    font-family:'Roboto', sans-serif;
+}
+
+.caja{
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    *height: 900px;
+    *display: flex;
+    *flex-wrap: wrap;
+}
+
+.cajaTimer{
+    height: 40px;
+    width: 49.5%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(119, 156, 156);
+}
+
+.cajaBanderas{
+    width: 49.5%;
+    height: 40px;
+    display: flex;
+    *align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(119, 156, 156);
+    border-right: 1px solid black;
+}
+
+.cajaBanderas h3{
+    width: 30px;
+}
+
+#contenedor{
+    *border: 1px solid black;
+    *width: 416px;
+    *height: 50px;
+    display: flex;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+#contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    font-size: 3rem;
+    font-weight: bold; 
+}
+
+h3{
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+}
+
+.cajaJuego{
+    background-color: rgb(95, 124, 124);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 20px 10px 10px 10px;
+}
+
+#inputs{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    margin: 5px;
+    padding: 1rem;
+    font-weight: bold; 
+    width: 20%;
+    background-color: rgb(202, 49, 49);
+    color: white;
+}
+
+p{
+    color: rgb(202, 49, 49);
+}
+
+#nuevoJuego p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cajaImagenBandera{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+}

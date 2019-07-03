@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    background-color: rgba(0, 195, 255,0.3);
+}
+
+#contenidoPrincipal{
+    background-color: rgba(0, 85, 255, 0.5);
+    padding: 50px;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 0 0 20px black; 
+}
+
+#contenidoPrincipal form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contenidoPrincipal form label{
+    margin-top: 10px;
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ServicioRestaurante, #options{
+    text-align: left;
+}
+
+#enviar{
+    margin-top: 20px;
+}
+

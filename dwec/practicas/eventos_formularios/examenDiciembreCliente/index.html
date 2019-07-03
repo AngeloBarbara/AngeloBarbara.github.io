@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/main.js"></script>
+    <script src="js/Reserva.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Angelo Barbara</title>
+</head>
+<body>
+    <noscript>Su navegador no soporta javascript</noscript>
+    <header>
+            <h1>Examen Diciembre</h1>
+        </header>
+        <main>
+            <div id="contenidoPrincipal">
+                <form action="index.html" method="POST">
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input id="nombre" type="text"><br>
+                    <span id="errorNombre"></span><br>
+                    <label for="correo">Correo electrónico:</label><br>
+                    <input id="correo" type="text"><br>
+                    <span id="errorCorreo"></span><br>
+                    <label for="fechaLlegada">Fecha llegada:</label><br>
+                    <input id="fechaLlegada" type="text"><br>
+                    <span id="errorFechaLlegada"></span><br>
+                    <label for="horaLlegada">Hora de llegada:</label><br>
+                    <input type="text" name="" id="horaLlegada"><br>
+                    <span id="errorHoraLlegada"></span><br>
+                    <label for="nNoches">Número de noches:</label><br>
+                    <input type="text" id="nNoches"><br>
+                    <span id="errorNNoches"></span><br>
+                    <label for="nPersonas">Número de personas:</label><br>
+                    <input type="text" id="nPersonas"><br>
+                    <span id="errorNPersonas"></span><br>
+                    <label for="ServicioRestaurante">Servicio del restaurante:</label><br>
+                    <div id="ServicioRestaurante">
+                        <input type="checkbox" class="restaurante" value="Desayuno">
+                        <span>Desayuno</span><br>
+                        <input type="checkbox" class="restaurante" value="Almuerzo">
+                        <span>Almuerzo</span><br>
+                        <input type="checkbox" class="restaurante" value="Cena">
+                        </span>Cena</span>
+                    </div>
+                    <span id="errorServicio"></span><br>
+                    <label for="EdadCliente">Edad del cliente:</label><br>
+                    <div id="options">
+                        <input type="radio" name="" class="edad" value="Menos de 20" checked>Menos de 20<br>
+                        <input type="radio" name="" class="edad" value="Entre 20 y 40">Entre 20 y 40<br>
+                        <input type="radio" name="" class="edad" value="Más de 40">Más de 40<br>
+                    </div>
+                    <input type="submit" id="enviar" value="Enviar mi reserva">
+                </form>
+            </div>
+        </main>
+</body>
+</html>
+
+
+

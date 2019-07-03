@@ -1,0 +1,147 @@
+body{
+    background-color: #d9d89f;
+}
+
+.informacionVilla, .servicios, .fotos, .seccionesReservas, .opiniones, .informacionPagos {
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+.informacionVilla p {
+    text-align: justify;
+}
+
+#tituloVilla {
+    background: url("../imagenes/tituloVilla.png");
+    background-size: cover;
+    text-align: center;
+    border-bottom: 2px solid white;
+    text-shadow: 1px 1px 2px black;
+    width: 100%;
+    padding-top: 2em;
+    font-size: 3em;
+}
+
+.seccionesReservas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.seccionesReservas p label {
+    display: block;
+}
+
+.seccionesReservas p input:valid {
+    box-shadow: 0 0 10px green;
+}
+
+.seccionesReservas p input:invalid {
+    box-shadow: 0 0 10px red;
+}
+
+.servicios {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    *justify-content: space-between;
+}
+.servicios ul{
+    *border: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+    *width: 100%;
+}
+.servicios ul li {
+    list-style: none;
+    padding: 2%;
+   *border: 1px solid black;
+    align-items: initial;
+    width: 100%;
+}
+
+.servicios ul li i{
+    
+    *border: 1px solid black;
+    *align-items: initial;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.fotos, .opiniones, .informacionPagos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotos img {
+    width: 100%;
+    margin-top: 20px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.opiniones {
+    text-align: justify;
+}
+
+.opiniones span {
+    font-size: 20px;
+}
+
+.informacionPagos .iconosPagos i {
+    font-size: 2.5em;
+    margin: 0.10em;
+}
+
+.btnConsultar {
+    width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    .informacionReserva {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "info servicios" "fotos reserva" "fotos opiniones" "fotos pagos";
+    }
+    .informacionVilla {
+        grid-area: info;
+    }
+    .servicios {
+        grid-area: servicios;
+        display: flex;
+        justify-content: center;
+    }
+    .fotos {
+        grid-area: fotos;
+    }
+    .fotos img {
+        height: 400px;
+    }
+    .seccionesReservas {
+        grid-area: reserva;
+    }
+    .opiniones {
+        grid-area: opiniones;
+    }
+    .informacionPagos {
+        grid-area: pagos;
+        display: flex;
+    }
+    .informacionPagos .iconosPagos i {
+        font-size: 2.5em;
+        margin: 3px;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    .btnConsultar {
+        width: 80%;
+    }
+}

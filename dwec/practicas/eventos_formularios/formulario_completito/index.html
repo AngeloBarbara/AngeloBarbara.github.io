@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <title>Formulario completito</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Formulario completito</h1>
+    </header>
+    <main>
+        <div id="contenidoPrincipal">
+            <form action="index.html" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text">
+                <span id="errorNombre"></span>
+                <label for="correo">Correo electrónico:</label>
+                <input id="correo" type="text">
+                <span id="errorCorreo"></span>
+                <label for="dni">DNI:</label>
+                <input id="dni" type="text">
+                <span id="errorDni"></span>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="text" name="" id="fecha">
+                <span id="errorFecha"></span>
+                <label for="nTelefono">Número de teléfono:</label>
+                <input type="text" id="nTelefono">
+                <span id="errorNTelefono"></span>
+                <label for="nCuenta">Número de cuenta:</label>
+                <input type="text" name="" id="nCuenta">
+                <span id="errorNCuenta"></span>
+                <label for="url">URL:</label>
+                <input type="text" name="" id="url">
+                <span id="errorUrl"></span>
+                <label for="curso">Curso:</label>
+                <select id="curso">
+                    <option value="seleccionar">- Seleccionar -</option>
+                    <option value="2daw">2DAW</option>
+                    <option value="2asir">2ASIR</option>
+                </select>
+                <span id="errorCurso"></span>
+                <label for="asignaturas">Asignaturas:</label>
+                <div id="cajaAsignaturas">
+                    <input type="checkbox" class="asignatura">
+                    <span>DWEC</span>
+                    <input type="checkbox" class="asignatura">
+                    <span>DWES</span>
+                    <input type="checkbox" class="asignatura">
+                    <span>DIW</span>
+                    <input type="checkbox" class="asignatura">
+                    <span>HLC</span>
+                    <input type="checkbox" class="asignatura">
+                    <span>DAW</span>
+                    <input type="checkbox" class="asignatura">
+                    <span>EMP</span>
+                </div>
+                <span id="errorAsignatura"></span>
+                <input type="radio" name="" id="terminosUso">He leído y acepto los términos de uso
+                <span id="errorTerminosUso"></span>
+
+                <input type="button" id="enviar" value="Enviar">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

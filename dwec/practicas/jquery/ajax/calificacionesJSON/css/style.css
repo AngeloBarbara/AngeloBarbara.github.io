@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    text-align: center;
+}
+
+#showInfo div select{
+    margin: 15px;
+}

@@ -1,0 +1,51 @@
+@font-face{
+    font-family: "Mystery Quest";
+	src: url("../fonts/MysteryQuest-Regular.ttf");
+}
+
+body{
+    background-color: rgb(108, 151, 216);
+    font-family: 'Mystery Quest';
+    font-size: 16px;
+    *justify-content: center;
+    text-align: center;
+}
+
+#web{
+    *margin-top: 20px;
+    margin: 0 auto;
+    width: 900px;
+    border-radius: 20px;
+    border: 1px solid black;
+    min-height: 700px;
+    background-color: rgb(74, 120, 189);
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+option, select, input{
+    text-align: center;
+    width: 10rem;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+}
+
+#cajaError{
+    border: 1px solid rgb(187, 46, 46);
+    width: 400px;
+    height: 50px;
+    background-color: rgba(228, 144, 144, 0.4);
+    margin-top: 20px;
+    *display: none;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(187, 46, 46);
+}

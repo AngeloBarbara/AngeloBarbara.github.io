@@ -1,0 +1,47 @@
+*{
+    font-family: 'Open Sans', cursive;
+}
+
+body{
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: 200%;
+    animation: movimiento 10s infinite linear alternate;
+}
+
+@keyframes movimiento {
+    from { background-position: bottom left; }
+    to   { background-position: top right; }
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#panelPrincipal{
+    text-align: center;
+    margin: auto;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(158, 42, 48);
+}
+
+#botonEntrar{
+    text-decoration: none;
+    padding: 10px 120px;
+    background-color: rgb(106, 158, 106);
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+}
+
+#botonEntrar:hover{
+    background-color: rgb(7, 206, 7);
+    transition: all 1s ease;
+}
